@@ -47,7 +47,7 @@ def login(base_datos):
     return("Te has logueado correctamente")
 
 #Funcion de guardado de datos
-ruta = "C:\Users\Maxi\Desktop\aca guardamos los datos"
+""" ruta = "C:\Users\Maxi\Desktop\aca guardamos los datos"
 
 def guardar_data(usuarios, ruta):
     with open(ruta + "/users_in_db.txt", "w") as f:
@@ -55,8 +55,7 @@ def guardar_data(usuarios, ruta):
             linea = "El nombre de usuario es " + usuario + " y la contraseña es " + contraseña + "\n"
             f.write(linea)
     print("Se guardaron los datos correctamente.")
-
-#Funcion de ejecucion del programa
+ """
 
 while True:
     selector_de_opciones = input("\nElija una de estas opciones:\n 1) Crear un usuario.\n 2) Login de usuario.\n 3) Leer la informacion.\n 4) Guardar informacion.\n 5) Finalizar el programa.\n ")
