@@ -46,13 +46,9 @@ def login(base_datos):
         password = input("Ingrese su password: ")
     return("Te has logueado correctamente")
 
-#Importar drive y ruta
-from google.colab import drive
-drive.mount("/drive/")
-
-ruta = "/drive/MyDrive/Python_CoderHouse"
-
 #Funcion de guardado de datos
+ruta = "C:\Users\Maxi\Desktop\aca guardamos los datos"
+
 def guardar_data(usuarios, ruta):
     with open(ruta + "/users_in_db.txt", "w") as f:
         for usuario, contraseña in usuarios.items():
