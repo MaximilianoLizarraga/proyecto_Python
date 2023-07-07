@@ -44,10 +44,11 @@ def login(base_datos):
     while base_datos[username] != password:
         print("Error en la password")
         password = input("Ingrese su password: ")
-    return("Te has logueado correctamente")
+    print("Te has logueado correctamente")
+    return
 
 #Funcion de guardado de datos
-""" ruta = "C:\Users\Maxi\Desktop\aca guardamos los datos"
+ruta = "C:/Users\Maxi\Desktop\datos_guardados"
 
 def guardar_data(usuarios, ruta):
     with open(ruta + "/users_in_db.txt", "w") as f:
@@ -55,25 +56,26 @@ def guardar_data(usuarios, ruta):
             linea = "El nombre de usuario es " + usuario + " y la contraseña es " + contraseña + "\n"
             f.write(linea)
     print("Se guardaron los datos correctamente.")
- """
+    return
 
-while True:
-    selector_de_opciones = input("\nElija una de estas opciones:\n 1) Crear un usuario.\n 2) Login de usuario.\n 3) Leer la informacion.\n 4) Guardar informacion.\n 5) Finalizar el programa.\n ")
-    if selector_de_opciones.isnumeric() :
-        selector_de_opciones = int(selector_de_opciones)
-        if selector_de_opciones == 1:
-            print(crear_usuario())
-        elif selector_de_opciones == 2:
-            print(login(usuarios))
-        elif selector_de_opciones == 3:
-            print(leer_base_datos(usuarios))
-        elif selector_de_opciones == 4:
-            print(guardar_data(usuarios))
-        elif selector_de_opciones == 5:
-            print("Se esta finalizando el programa...")
-            break
+def iniciar_programa():
+    while True:
+        selector_de_opciones = input("\nElija una de estas opciones:\n 1) Crear un usuario.\n 2) Login de usuario.\n 3) Leer la informacion.\n 4) Guardar informacion.\n 5) Finalizar el programa.\n ")
+        if selector_de_opciones.isnumeric() :
+            selector_de_opciones = int(selector_de_opciones)
+            if selector_de_opciones == 1:
+                crear_usuario()
+            elif selector_de_opciones == 2:
+                login(usuarios)
+            elif selector_de_opciones == 3:
+                leer_base_datos(usuarios)
+            elif selector_de_opciones == 4:
+                guardar_data(usuarios,ruta)
+            elif selector_de_opciones == 5:
+                print("Se esta finalizando el programa...")
+                break
+            else:
+                print("Elija una opcion valida.")
         else:
             print("Elija una opcion valida.")
-    else:
-        print("Elija una opcion valida.")
-print("Finalizo el programa")
+    print("Finalizo el programa")

@@ -10,4 +10,8 @@ class Cliente:
 
     def __str__(self):
         return f"Los datos del cliente son: {self.usuario}, {self.mail}, {self.edad} y {self.categorias}"
+    
+    def saludar(self):
+        return f"Hola {self.usuario}!!"
+        
 pass
