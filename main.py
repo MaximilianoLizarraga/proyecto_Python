@@ -1,5 +1,5 @@
-from paquete.clase_cliente import Cliente
-from paquete.funciones_entrega_1 import *
+from Segunda_pre_entrega_Lizarraga.clase_cliente import Cliente
+from Segunda_pre_entrega_Lizarraga.funciones_entrega_1 import *
 
 cliente1 = Cliente("Maxi","maxi@gmail",30)
 cliente2= Cliente("Carlos","carlos@gmail.com",27,"")

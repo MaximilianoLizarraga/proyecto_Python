@@ -1,0 +1,7 @@
+setup.py
+Segunda_pre_entrega_Lizarraga/clase_cliente.py
+Segunda_pre_entrega_Lizarraga/funciones_entrega_1.py
+Segunda_pre_entrega_Lizarraga.egg-info/PKG-INFO
+Segunda_pre_entrega_Lizarraga.egg-info/SOURCES.txt
+Segunda_pre_entrega_Lizarraga.egg-info/dependency_links.txt
+Segunda_pre_entrega_Lizarraga.egg-info/top_level.txt
